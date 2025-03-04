@@ -20,9 +20,10 @@ import "../styles/global.css";
       <img src="/medbuoy-landing.png" alt="MEDBUOY Illustration" width="100%" style="max-width: 500px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);" />
       
       <form name="email-signup" method="POST" data-netlify="true" action="/thank-you">
-        <input type="email" name="email" placeholder="Enter your email" required />
-        <button type="submit">Get a Free Consultation</button>
-      </form>
+		<input type="hidden" name="form-name" value="email-signup" />
+		<input type="email" name="email" placeholder="Enter your email" required />
+		<button type="submit">Get a Free Consultation</button>
+	</form>	
     </main>
 
     <footer>
